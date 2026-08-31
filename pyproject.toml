@@ -1,0 +1,26 @@
+[project]
+name = "simple-list-picker"
+description = "Pick one item out of a ComfyUI list by index, with an index that can step once per queued job."
+version = "0.1.0"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = []
+classifiers = [
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Repository = "https://github.com/jmtoball/comfyui-simple-list-picker"
+
+[tool.comfy]
+PublisherId = "jmtoball"
+DisplayName = "Simple List Picker"
+Icon = ""
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "C4"]
+ignore = ["E501"]
